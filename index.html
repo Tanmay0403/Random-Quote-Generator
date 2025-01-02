@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="navbar">
+        <img src="./images/logo.png" alt="" srcset="">
+        <h4>techpathshala</h4>
+        <button id="allQuotes" onclick="location.href='allQuote.html'">All Quotes</button>
+    </section>
+
+    <div class="container">
+        <h1>Let's Start Generating Quotes</h1>
+        <div class="random-quote-container">
+            <div class="random-quote">
+                <div class="quote">
+                    <h4 class="random-quote-generate">"Stay Hungry Stay Foolish"</h4>
+                </div>
+                <div class="author">
+                    <b class="random-quote-author">- Steve Jobs</b>
+                </div>
+            </div>
+        </div>
+
+        <div class="generate">
+            <button id="generate" onclick="displayRandomQuote()">Generate Quote</button>
+
+            <label for="newQuote">New Quote</label>
+            <input type="text" name="newQuote" id="newQuote" placeholder="New Quote">
+
+            <label for="authorName">Name</label>
+            <input type="text" name="authorName" id="authorName" placeholder="Name">
+
+            <button id="addbutton" onclick="saveQuote()">Add Quote</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
