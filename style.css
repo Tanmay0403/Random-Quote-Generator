@@ -8,19 +8,19 @@
 }
 
 .navbar{
-    height: 73px;
+    height: 83px;
     background-color: #0C244A;
     color: #FFFF;
     display: flex;
 }
 .navbar img{
-    padding-top: 15px;
+    padding-top: 20px;
     height:40px;
     width:35px;
     margin-left: 80px;
 }
 .navbar > h4{
-    padding-top: 20px;
+    padding-top: 25px;
     font-size: 24px;
     margin-left: 20px;
     margin-top: 0px;
@@ -28,7 +28,7 @@
 #allQuotes{
     margin-top: 15px;
     width:156px;
-    height:45px;
+    height:51px;
     border-radius: 8px;
     background-color: #F3BD00;
     /* padding: 16px 40px; */
@@ -36,6 +36,9 @@
     font-size: 18px;
 }
 
+#allQuotes:hover{
+    background-color: #eed888;
+}
 .container{
     margin-top: 35px;
     margin-left: 80px;
@@ -45,21 +48,23 @@
 
 .container > h1{
     text-align: center;
+    font-size: 45px;
+    font-weight: 900;
 }
 
 .random-quote-container{
-    margin-top: 20px;
-    border-radius: 20px;
+    margin-top: 30px;
+    border-radius: 40px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    height: 250px;
+    height: 358px;
     /* padding: 40px; */
     padding-top: 1px;
 }
 
 .random-quote{
     background-color: #F5F5F5;
-    border-radius: 20px;
-    height:190px;
+    border-radius: 24px;
+    height:278px;
     margin:30px;
     display: flex;
     align-items: center;
@@ -71,40 +76,48 @@
 .quote > h4{
     /* position:absolute; */
     height:50px;
-    font-size: 2em;
-    /* bottom: 10px;
-    right: 10px; */
+    font-size: 48px;
+    font-weight: 900;
 }
 .author{
     margin-left: 900px;
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 700;
     position:absolute;
     bottom: 18px;
     right: 100px;
 }
 #generate{
-    margin-top: 30px;
+    margin-top: 40px;
     width:100%;
     border-radius: 8px;
-    font-size: 20px;
-    height:50px;
+    font-size: 24px;
+    font-weight: 700;
+    height:61px;
     background-color: #F3BD00;
     /* margin-bottom: 20px; */
 }
 
+#generate:hover{
+    background-color: #eed888;
+}
+
 label{
-    font-size: 20px;
-    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
     display: block;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 input[type="text"]
 {
-    font-size: 20px;
-    height:50px;
+    font-size: 24px;
+    height:69px;
     padding:8px;
     border-radius: 8px;
     box-sizing: border-box;
+    /* font-weight: 700; */
 }
 #newQuote{
     margin-top: 5px;
@@ -122,7 +135,12 @@ input[type="text"]
     border-radius: 8px;
     background-color: #F3BD00;
     font-size: 20px;
+    font-weight: 700;
 }
+#addbutton:hover{
+    background-color: #eed888;
+}
+
 button{
     cursor: pointer;
 }

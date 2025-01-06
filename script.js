@@ -24,6 +24,7 @@ function loadQuotes()
     }
     else
     {
+        localStorage.setItem("quotes", JSON.stringify(defaultQuotes));
         return defaultQuotes;
     }
 }
@@ -38,7 +39,11 @@ function displayRandomQuote()
     console.log(quotes);    
 }
 
-function saveQuote()
+function saveQuotes(quotes) {
+    localStorage.setItem("quotes", JSON.stringify(quotes));
+  }
+
+function addNewQuote()
 {
     var new_quote = document.getElementById("newQuote").value;
     var new_author = document.getElementById("authorName").value;
@@ -58,6 +63,8 @@ function saveQuote()
     }
    
 }
+
+
 
 function displayAllQuotes() {
     var quote_container = document.querySelector(".quote-container");
