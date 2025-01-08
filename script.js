@@ -28,7 +28,8 @@ function loadQuotes()
         return defaultQuotes;
     }
 }
-
+loadQuotes()
+displayRandomQuote()
 function displayRandomQuote()
 {
     var quotes = loadQuotes();
@@ -58,8 +59,8 @@ function addNewQuote()
         quotes.push({quote:new_quote, author: new_author});
         localStorage.setItem("quotes",JSON.stringify(quotes));
         alert("Quote Saved");
-        new_quote.value = " ";
-        new_author.value = " ";
+        new_quote.textContent = " ";
+        new_author.textContent = " ";
     }
    
 }
